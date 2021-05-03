@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png" />
+        </div>
+    </header>
+    <main>  
+        <section class="inputs">
+            <dv class="stat">
+                <label for="inHP">Health</label>
+                <input id="inHP" type="number" min="0" max="10">
+                <label for="inST">Strength</label>
+                <input id="inST" type="number" min="0" max="10">
+                <label for="inIT">Intelligence</label>
+                <input id="inIT" type="number" min="0" max="10">
+                <label for="inSP">Speed</label>
+                <input id="inSP" type="number" min="0" max="10">
+            </dv>
+            <button id="sendInput">These are my stats!</button>
+        </section>
+        <section class="outputs">
+            <div>
+                <label>
+                    My health looks like...
+                    <br>
+                    <img src="./quest.png" id="outHP" width='100px'/>
+                </label>
+                <label>
+                    <img src="./quest.png" id="outST" width='100px'/>
+                </label>
+                <label>
+                    <img src="./quest.png" id="outIT" width='100px'/>
+                </label>
+                <label>
+                    <img src="./quest.png" id="outSP" width='100px'/>
+                </label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./functions.js"></script>
+</body>
+
+</html>
