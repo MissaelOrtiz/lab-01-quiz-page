@@ -2,9 +2,6 @@ import { checkForYes } from './utils.js';
 
 const button = document.getElementById('start-button');
 const resultsDisplay = document.getElementById('quiz-results');
-const infoBox1 = document.getElementById('info1');
-const infoBox2 = document.getElementById('info2');
-const infoBox3 = document.getElementById('info3');
 
 button.addEventListener('click', () => {
     alert('You are about to partake in the Trial of Frienship');
