@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>LAB 01 - Quiz Page</title>
 </head>
 <body>
+    <div>
+        <h1>
+         About me!
+        </h1>
+         <p>Hello there! My name is Missael Ortiz! I am an aspiring software engineer and all around nerd. I have a few interests that you will have to learn about before we become the bests of friends. Time to pay attention! This is the timeline of my existance!</p>
+          <ol class="list">
+                <li>Birth</li>
+                <li>Became a Dungeon Master</li>
+                <li>Attended Technowizard School [current]</li>
+         </ol>
+    </div>
     <main class="information">
-        <div>
-            <h1>
-             About me!
-            </h1>
-             <p>Hello there! My name is Missael Ortiz! I am an aspiring software engineer and all around nerd. I have a few interests that you will have to learn about before we become the bests of friends. Time to pay attention! This is the timeline of my existance!</p>
-              <ol class="list">
-                    <li>Birth</li>
-                    <li>Became a Dungeon Master</li>
-                    <li>Attended Technowizard School [current]</li>
-             </ol>
-        </div>
-        <div>
+        <div class="box" id="info1">
             <h2>
              Birth
             </h2>
             <p>I was born on a beautiful thursday the 16th in October of 1997. Wow! Absolutely insane, that makes me a Libra if you like that sort of stuff. This also makes my birthstone opal! WOW! I was born with all my likes and dislikes pre-programed. I like the color red and love spicy foods!</p>
         </div>
-        <div>
+        <div class="box" id="info2">
             <h2>
              Became a Dungeon Master
             </h2>
@@ -43,7 +48,7 @@
                 <li>Made a fool of myself with silly voices</li>
             </ul>
         </div>
-        <div>
+        <div class="box" id="info3">
             <h2>
                 Attended Technowizard School
             </h2>
@@ -53,8 +58,9 @@
     <section class="quizZone">
         <p>You now know everything about me! Congrats!</p>
         <button id="start-button">Start the Friendship Quiz!</button>
-        <span id="quiz-results"></span>
+        <span id="quiz-results">Is there friendship in our future?...</span>
     </section>
+    <script type="module" src='./app.js'></script>
+    <script type="module" src='./utils.js'></script>
 </body>
-<script src='app.js'></script>
 </html>
